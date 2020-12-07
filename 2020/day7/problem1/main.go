@@ -27,10 +27,8 @@ func main() {
 		words := strings.Split(line, " ")
 		parent := ""
 		child := []string{}
-		// fmt.Println(line)
 		for i, word := range words {
 			if word == "bag" || word == "bag," || word == "bag." || word == "bags" || word == "bags," || word == "bags." {
-				// fmt.Println(word)
 				if i == 2 {
 					parent = words[i-2] + " " + words[i-1]
 				} else {
