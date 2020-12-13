@@ -36,7 +36,7 @@ func main() {
 
 	// generate WolframAlpha query
 	for key, val := range offset {
-		fmt.Printf("(t+%d) mod %d = 0.", val, key)
+		fmt.Printf("(t+%d) mod %d = 0,", val, key)
 	}
 
 	// solve by WolframAlpha
